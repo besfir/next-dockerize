@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  next:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile-dev
+    image: next_dev
+    container_name: next_dev
+    command: pnpm dev
+    volumes:
+      - .:/next-app
+    ports:
+      - "3000:3000"

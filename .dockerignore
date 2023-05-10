@@ -1,0 +1,5 @@
+.docker
+docker-compose.dev.yml
+docker-compose.yml
+yarn-error.log
+.idea
