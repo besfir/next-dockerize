@@ -11,3 +11,8 @@
 
 확실치는 않지만 2개 스테이지(builder와 runner)로 나눴을 경우 속도가 2~3초 정도 더 빠른 경향이 있는것으로 보이는데, 
 Nextjs 공식 예제에서는 3개로 나누고 있기에 공식 예제를 따랐다.
+
+# Development Dockerfile에는 왜 `apk add --no-cache libc6-compat`을 사용하지 않았는가?
+
+`process.dlopen`에러를 방지하기 위해 설치하는 패키지인데, 검색해보니 `node xx.js`명령어로 앱을 실행할 때에 발생하는 것으로 확인돼서 일단 제거해봤다.
+
