@@ -3,3 +3,5 @@ docker-compose.dev.yml
 docker-compose.yml
 yarn-error.log
 .idea
+
+node_modules
