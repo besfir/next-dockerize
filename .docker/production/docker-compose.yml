@@ -3,11 +3,12 @@ version: '3.8'
 services:
   next:
     build:
-      context: .
-      dockerfile: .docker/Dockerfile
+      context: ../../
+      dockerfile: .docker/production/Dockerfile
     image: next_prod
     container_name: next_prod
     command: node /app/server.js
+    user: nextjs
     volumes:
       - .:/next-app
     ports:

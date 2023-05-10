@@ -3,8 +3,8 @@ version: '3.8'
 services:
   next:
     build:
-      context: .
-      dockerfile: .docker/Dockerfile-dev
+      context: ../../
+      dockerfile: .docker/development/Dockerfile
     image: next_dev
     container_name: next_dev
     command: pnpm dev
