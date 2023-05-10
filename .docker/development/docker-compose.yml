@@ -7,8 +7,8 @@ services:
       dockerfile: .docker/development/Dockerfile
     image: next_dev
     container_name: next_dev
-    command: pnpm dev
+    command: yarn dev
     volumes:
-      - .:/next-app
+      - ../../:/next-app
     ports:
       - "3000:3000"
